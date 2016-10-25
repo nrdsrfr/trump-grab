@@ -1,0 +1,21 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:2a596de9e81938c7dde2043d7427e66f:ea76643a295d5e53a16c27310d14922a:70b3429f72b4bd58a90df7ea2b064e33$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(cssSprites.png);}
+
+.groupNotifier {width:229px; height:38px; background-position: -653px -1px}
+.nextSelected {width:43px; height:43px; background-position: -473px -1px}
+.nextUnselected {width:43px; height:43px; background-position: -518px -1px}
+.preSelected {width:43px; height:43px; background-position: -563px -1px}
+.preUnselected {width:43px; height:43px; background-position: -608px -1px}
+.viewResultsSelected {width:234px; height:43px; background-position: -1px -1px}
+.viewResultsUnselected {width:234px; height:43px; background-position: -237px -1px}
