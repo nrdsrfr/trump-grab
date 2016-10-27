@@ -1,0 +1,174 @@
+
+trump.png
+size: 2010,1529
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 1853, 1078
+  size: 156, 257
+  orig: 311, 257
+  offset: 81, 0
+  index: -1
+armBack
+  rotate: false
+  xy: 1657, 1218
+  size: 194, 252
+  orig: 194, 252
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 1, 1
+  size: 632, 401
+  orig: 632, 401
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 1336, 1233
+  size: 319, 239
+  orig: 319, 239
+  offset: 0, 0
+  index: -1
+handSlap
+  rotate: false
+  xy: 1923, 479
+  size: 52, 169
+  orig: 52, 169
+  offset: 0, 0
+  index: -1
+head1
+  rotate: false
+  xy: 704, 341
+  size: 340, 495
+  orig: 340, 495
+  offset: 0, 0
+  index: -1
+head2
+  rotate: false
+  xy: 1, 404
+  size: 354, 527
+  orig: 354, 527
+  offset: 0, 0
+  index: -1
+head3
+  rotate: false
+  xy: 1, 933
+  size: 331, 522
+  orig: 331, 522
+  offset: 0, 0
+  index: -1
+head4
+  rotate: false
+  xy: 1792, 1
+  size: 216, 284
+  orig: 216, 284
+  offset: 0, 0
+  index: -1
+head5
+  rotate: false
+  xy: 1046, 410
+  size: 348, 449
+  orig: 348, 449
+  offset: 0, 0
+  index: -1
+head6
+  rotate: false
+  xy: 1396, 462
+  size: 347, 428
+  orig: 347, 428
+  offset: 0, 0
+  index: -1
+head7
+  rotate: false
+  xy: 1435, 1
+  size: 355, 459
+  orig: 355, 459
+  offset: 0, 0
+  index: -1
+head8
+  rotate: false
+  xy: 357, 404
+  size: 345, 505
+  orig: 345, 505
+  offset: 0, 0
+  index: -1
+head9
+  rotate: false
+  xy: 1020, 861
+  size: 314, 431
+  orig: 314, 431
+  offset: 0, 0
+  index: -1
+head10
+  rotate: false
+  xy: 672, 911
+  size: 346, 462
+  orig: 346, 462
+  offset: 0, 0
+  index: -1
+head11
+  rotate: false
+  xy: 334, 933
+  size: 336, 467
+  orig: 336, 467
+  offset: 0, 0
+  index: -1
+head12
+  rotate: false
+  xy: 1073, 1
+  size: 360, 407
+  orig: 360, 407
+  offset: 0, 0
+  index: -1
+micHand
+  rotate: false
+  xy: 1336, 892
+  size: 267, 339
+  orig: 267, 339
+  offset: 0, 0
+  index: -1
+okayFinger
+  rotate: false
+  xy: 1745, 479
+  size: 176, 284
+  orig: 176, 284
+  offset: 0, 0
+  index: -1
+pointyfinger
+  rotate: false
+  xy: 635, 1
+  size: 436, 338
+  orig: 436, 338
+  offset: 0, 0
+  index: -1
+shirt
+  rotate: false
+  xy: 1846, 765
+  size: 148, 311
+  orig: 172, 348
+  offset: 24, 0
+  index: -1
+shoulderBack
+  rotate: false
+  xy: 1605, 892
+  size: 239, 324
+  orig: 239, 324
+  offset: 0, 0
+  index: -1
+thumbUp
+  rotate: false
+  xy: 1020, 1294
+  size: 299, 234
+  orig: 299, 234
+  offset: 0, 0
+  index: -1
+tweak
+  rotate: false
+  xy: 1792, 287
+  size: 197, 190
+  orig: 197, 190
+  offset: 0, 0
+  index: -1
