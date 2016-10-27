@@ -153,7 +153,7 @@ function _inherits(subClass, superClass) {
 	}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var curUrl = 'http://trump.nrdsrfr.com/build/';
+var curUrl = 'http://trump.nrdsrfr.com/build/index.html';
 
 var GameStateA = function (_Phaser$State) {
 	_inherits(GameStateA, _Phaser$State);
@@ -190,7 +190,6 @@ var GameStateA = function (_Phaser$State) {
 			// Hide input box
 			//hideToggle();
 			//hideEntryButtons();
-			console.log("MONKEY!");
 
 			// Set Phaser scaling here
 			// this.game.stage.fullScreenScaleMode = Phaser.StageScaleMode.EXACT_FIT;
@@ -226,11 +225,12 @@ var GameStateA = function (_Phaser$State) {
 	}, {
 		key: 'loadImageComplete',
 		value: function loadImageComplete(imageLoadedIn) {
-
-			console.log('Complete', uploadedImage.src);
-			this.uploadedImageSprite = this.game.add.sprite(0, 0, 'myImage');
-			this.uploadedImageSprite.inputEnabled = true;
-			this.uploadedImageSprite.events.onInputDown.add(this.getInputArea, this);
+			if (uploadedImage.src != curUrl) {
+				console.log('Complete', uploadedImage.src);
+				this.uploadedImageSprite = this.game.add.sprite(0, 0, 'myImage');
+				this.uploadedImageSprite.inputEnabled = true;
+				this.uploadedImageSprite.events.onInputDown.add(this.getInputArea, this);
+			}
 		}
 	}, {
 		key: 'getInputArea',
@@ -245,7 +245,7 @@ var GameStateA = function (_Phaser$State) {
 			console.log('Y:' + this.input.activePointer.y);
 
 			// this.enterYourCode.alpha = 0;
-			this.enterYourCode.position.x = this.game.world.centerX - 155;
+			this.enterYourCode.position.x = this.game.world.centerX - 225;
 			this.enterYourCode.text = 'I THINK TRUMPS HAPPY GROPING NOW?';
 			//play animation
 			// this.playAnimation(this.targetCordinates.x,this.targetCordinates.y);
