@@ -153,7 +153,7 @@ function _inherits(subClass, superClass) {
 	}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var curUrl = 'http://10.252.0.210:3000/';
+var curUrl = 'http://trump.nrdsrfr.com/build/';
 
 var GameStateA = function (_Phaser$State) {
 	_inherits(GameStateA, _Phaser$State);
