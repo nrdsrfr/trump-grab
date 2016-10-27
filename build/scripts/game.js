@@ -153,8 +153,7 @@ function _inherits(subClass, superClass) {
 	}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
 }
 
-var prizesVar = void 0;
-var curUrl = 'http://192.168.0.4:3000/';
+var curUrl = 'http://10.252.0.210:3000/';
 
 var GameStateA = function (_Phaser$State) {
 	_inherits(GameStateA, _Phaser$State);
@@ -179,12 +178,9 @@ var GameStateA = function (_Phaser$State) {
 		key: 'preload',
 		value: function preload() {
 			// Load sprite sheet here
-			this.game.load.atlas('spriteSheet', './assets/spriteSheet.png', './assets/spriteSheet.json');
 
 			// this.game.cache.addImage('uploadedImage', null, imageData);
-			this.game.load.image('uploadedImage', 'assets/donald-trump.jpg');
-
-			this.game.load.spine('spineboy', '../assets/trump.json');
+			this.game.load.spine('spineboy', './assets/trump.json');
 		}
 	}, {
 		key: 'create',
@@ -215,21 +211,26 @@ var GameStateA = function (_Phaser$State) {
 			}
 
 			this.spineboySprite = this.add.spine(400, 300, 'spineboy');
-			this.spineboySprite.position.set(600, 600);
+			this.spineboySprite.position.set(this.game.world.centerX, this.game.world.centerY + 150);
 			this.spineboySprite.scale.set(0.25, 0.25);
-			this.spineboy = this.spineboySprite.setAnimationByName(0, "animation", true);
+			this.spineboy = this.spineboySprite.setAnimationByName(0, "Idel", true);
+			this.spineboy.timeScale = 0.8;
+
+			this.tileTextStyle = { font: "28px PT Sans", fill: "#fff", boundsAlignH: "center", boundsAlignV: "middle", align: 'center' };
+			this.enterYourCode = this.add.text(this.game.world.centerX - 255, this.game.world.centerY - 175, 'UPLOAD AN IMAGE FOR TRUMP TO POKE!', this.tileTextStyle);
+			if (uploadedImage.src != curUrl) {
+				this.enterYourCode.text = 'CLICK TO HELP TRUMP FIND IT';
+				this.enterYourCode.position.x = this.game.world.centerX - 175;
+			}
 		}
 	}, {
 		key: 'loadImageComplete',
 		value: function loadImageComplete(imageLoadedIn) {
+
+			console.log('Complete', uploadedImage.src);
 			this.uploadedImageSprite = this.game.add.sprite(0, 0, 'myImage');
 			this.uploadedImageSprite.inputEnabled = true;
 			this.uploadedImageSprite.events.onInputDown.add(this.getInputArea, this);
-			console.log('Complete', uploadedImage.src);
-			if (uploadedImage.src != curUrl) {
-				var tileTextStyle = { font: "28px PT Sans", fill: "#fff", boundsAlignH: "center", boundsAlignV: "middle", align: 'center' };
-				this.enterYourCode = this.add.text(this.game.world.centerX - 120, this.game.world.centerY - 135, 'CLICK TO POINT TO THE KITTY!', tileTextStyle);
-			}
 		}
 	}, {
 		key: 'getInputArea',
@@ -243,10 +244,19 @@ var GameStateA = function (_Phaser$State) {
 			console.log('X:' + this.input.activePointer.x);
 			console.log('Y:' + this.input.activePointer.y);
 
-			this.enterYourCode.alpha = 0;
+			// this.enterYourCode.alpha = 0;
+			this.enterYourCode.position.x = this.game.world.centerX - 155;
+			this.enterYourCode.text = 'I THINK TRUMPS HAPPY GROPING NOW?';
 			//play animation
 			// this.playAnimation(this.targetCordinates.x,this.targetCordinates.y);
-			this.spineboySprite.position.set(this.targetCordinates.x + 185, this.targetCordinates.y + 65);
+			this.spineboy = this.spineboySprite.setAnimationByName(0, "animation", true);
+			this.spineboy.timeScale = 0.8;
+			this.tween = this.game.add.tween(this.spineboySprite).to({ x: this.targetCordinates.x + 185, y: this.targetCordinates.y + 65 }, 500, Phaser.Easing.Quadratic.InOut, false, 0, 0);
+			this.tween.start();
+
+			// let tempSpriteSwap = this.game.world.bringToTop(this.enterYourCode);
+
+			// this.spineboySprite.position.set(this.targetCordinates.x+185,this.targetCordinates.y+65);
 		}
 	}, {
 		key: 'playAnimation',

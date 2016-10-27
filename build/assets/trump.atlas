@@ -1,19 +1,19 @@
 
 trump.png
-size: 2010,1529
+size: 1969,1558
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 arm
   rotate: false
-  xy: 1853, 1078
+  xy: 1792, 287
   size: 156, 257
   orig: 311, 257
   offset: 81, 0
   index: -1
 armBack
   rotate: false
-  xy: 1657, 1218
+  xy: 1755, 832
   size: 194, 252
   orig: 194, 252
   offset: 0, 0
@@ -27,14 +27,14 @@ body
   index: -1
 hand
   rotate: false
-  xy: 1336, 1233
+  xy: 1577, 1278
   size: 319, 239
   orig: 319, 239
   offset: 0, 0
   index: -1
 handSlap
   rotate: false
-  xy: 1923, 479
+  xy: 1898, 1278
   size: 52, 169
   orig: 52, 169
   offset: 0, 0
@@ -62,7 +62,7 @@ head3
   index: -1
 head4
   rotate: false
-  xy: 1792, 1
+  xy: 1745, 546
   size: 216, 284
   orig: 216, 284
   offset: 0, 0
@@ -132,9 +132,16 @@ micHand
   index: -1
 okayFinger
   rotate: false
-  xy: 1745, 479
+  xy: 1792, 1
   size: 176, 284
   orig: 176, 284
+  offset: 0, 0
+  index: -1
+poduim
+  rotate: false
+  xy: 1, 1457
+  size: 485, 89
+  orig: 485, 89
   offset: 0, 0
   index: -1
 pointyfinger
@@ -146,14 +153,14 @@ pointyfinger
   index: -1
 shirt
   rotate: false
-  xy: 1846, 765
+  xy: 1605, 892
   size: 148, 311
   orig: 172, 348
   offset: 24, 0
   index: -1
 shoulderBack
   rotate: false
-  xy: 1605, 892
+  xy: 1336, 1233
   size: 239, 324
   orig: 239, 324
   offset: 0, 0
@@ -167,7 +174,7 @@ thumbUp
   index: -1
 tweak
   rotate: false
-  xy: 1792, 287
+  xy: 1755, 1086
   size: 197, 190
   orig: 197, 190
   offset: 0, 0
