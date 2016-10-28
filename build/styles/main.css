@@ -515,7 +515,11 @@ nav{
 }
 
 
-.adsbygoogle{ width: 80% }
+.ads{ 
+    position: relative;
+    top: 7vmin;
+    display: block; 
+}
 
 
     
