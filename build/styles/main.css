@@ -206,6 +206,7 @@ nav{
   -webkit-backface-visibility: hidden;
   position: absolute;
   background-size: cover;
+  width: 100%;
 
   /*background-size:contain;
   width: 100%;
