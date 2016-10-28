@@ -346,10 +346,12 @@ nav{
 .win:hover {width:85px; height:43px; background-position: -88px -1px}
 
 .ads{ 
-    position: relative;
-    top: 7vmin;
-    display: block; 
-    width: 100%;
+  position: relative;
+  top: 7vmin;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 
