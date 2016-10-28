@@ -345,7 +345,12 @@ nav{
 }
 .win:hover {width:85px; height:43px; background-position: -88px -1px}
 
-
+.ads{ 
+    position: relative;
+    top: 7vmin;
+    display: block; 
+    width: 100%;
+}
 
 
 @-moz-document url-prefix() { 
@@ -515,12 +520,7 @@ nav{
 }
 
 
-.ads{ 
-    position: relative;
-    top: 7vmin;
-    display: block; 
-    width: 100%;
-}
+
 
 
     
