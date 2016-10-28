@@ -196,7 +196,7 @@ nav{
   margin:0 2vw;
 }
 
-.background {
+.background, .uploadForm {
   margin: 0px;
   background: url(../assets/BACKGROUND.png) no-repeat center center;
   display: flex;
@@ -205,11 +205,16 @@ nav{
   flex-direction: column;
   -webkit-backface-visibility: hidden;
   position: absolute;
+  background-size: cover;
 
   /*background-size:contain;
   width: 100%;
   height: 670px;*/
   /*background-size: 50% 100vh;*/
+}
+
+.uploadForm {
+  background: none;
 }
 
 .dinNoneReg{
